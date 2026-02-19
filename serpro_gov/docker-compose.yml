@@ -1,0 +1,48 @@
+services:
+  dagster:
+    build: .
+    container_name: dagster
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./workspace:/workspace
+      - ./dagster_home:/workspace/.dagster_home
+    working_dir: /workspace
+    environment:
+      DAGSTER_HOME: /workspace/.dagster_home
+    command: >
+      dagster-webserver
+      -w workspace.yaml
+      -h 0.0.0.0
+      -p 3000
+    depends_on:
+      - postgres
+
+  dagster-daemon:
+    build: .
+    container_name: dagster-daemon
+    volumes:
+      - ./workspace:/workspace
+      - ./dagster_home:/workspace/.dagster_home
+    working_dir: /workspace
+    environment:
+      DAGSTER_HOME: /workspace/.dagster_home
+    command: dagster-daemon run
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: dagster_user
+      POSTGRES_PASSWORD: dagster_pass
+      POSTGRES_DB: dagster_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

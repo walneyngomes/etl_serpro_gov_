@@ -1,0 +1,24 @@
+2026-02-19 00:35:16 +0000 - dagster - DEBUG - __ASSET_JOB - 886dd523-cc6e-47cc-b41f-51d5c301716a - 874 - LOGS_CAPTURED - Started capturing logs in process (pid: 874).
+2026-02-19 00:35:16 +0000 - dagster - DEBUG - __ASSET_JOB - 886dd523-cc6e-47cc-b41f-51d5c301716a - 874 - silver_nmpr - STEP_START - Started execution of step "silver_nmpr".
+2026-02-19 00:35:19 +0000 - dagster - ERROR - __ASSET_JOB - 886dd523-cc6e-47cc-b41f-51d5c301716a - 874 - silver_nmpr - STEP_FAILURE - Execution of step "silver_nmpr" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "silver_nmpr"::
+
+psycopg2.errors.UndefinedColumn: column "numeropromocao" does not exist
+LINE 3:     SELECT distinct upper(numeroPromocao) as nm_pr, 
+                                  ^
+HINT:  Perhaps you meant to reference the column "promocoes_bronzer.numero_promocao".
+
+
+Stack Trace:
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 135, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/workspace/assets/silver/silver_nmpr_sit.py", line 22, in silver_nmpr
+    cur.execute("""
+

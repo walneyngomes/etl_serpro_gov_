@@ -1,0 +1,8 @@
+2026-02-18 22:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - LOGS_CAPTURED - Started capturing logs in process (pid: 3264).
+2026-02-18 22:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - bronze_promocoes - STEP_START - Started execution of step "bronze_promocoes".
+2026-02-18 22:10:32 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - bronze_promocoes - ASSET_MATERIALIZATION - Materialized value bronze_promocoes.
+2026-02-18 22:10:32 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - bronze_promocoes - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-02-18 22:10:32 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - bronze_promocoes - Writing file at: /workspace/.dagster_home/storage/bronze_promocoes using PickledObjectFilesystemIOManager...
+2026-02-18 22:10:34 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - bronze_promocoes - ASSET_MATERIALIZATION - Materialized value bronze_promocoes.
+2026-02-18 22:10:34 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - bronze_promocoes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-02-18 22:10:35 +0000 - dagster - DEBUG - __ASSET_JOB - 35f561ea-4cc1-48f8-b0a4-6dad8fe105b8 - 3264 - bronze_promocoes - STEP_SUCCESS - Finished execution of step "bronze_promocoes" in 4.34s.

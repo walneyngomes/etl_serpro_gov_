@@ -1,0 +1,8 @@
+2026-02-19 00:56:25 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - LOGS_CAPTURED - Started capturing logs in process (pid: 1768).
+2026-02-19 00:56:27 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - silver_nmpr - STEP_START - Started execution of step "silver_nmpr".
+2026-02-19 00:56:29 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - silver_nmpr - ASSET_MATERIALIZATION - Materialized value bronze_promocoes.
+2026-02-19 00:56:30 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - silver_nmpr - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-02-19 00:56:30 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - silver_nmpr - Writing file at: /workspace/.dagster_home/storage/silver_nmpr using PickledObjectFilesystemIOManager...
+2026-02-19 00:56:32 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - silver_nmpr - ASSET_MATERIALIZATION - Materialized value silver_nmpr.
+2026-02-19 00:56:32 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - silver_nmpr - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-02-19 00:56:32 +0000 - dagster - DEBUG - __ASSET_JOB - 808a514d-41c6-41fb-8a90-a0e758a0493f - 1768 - silver_nmpr - STEP_SUCCESS - Finished execution of step "silver_nmpr" in 4.8s.

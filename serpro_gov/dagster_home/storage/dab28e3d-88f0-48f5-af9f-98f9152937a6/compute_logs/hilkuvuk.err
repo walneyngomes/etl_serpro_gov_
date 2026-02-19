@@ -1,0 +1,8 @@
+2026-02-19 00:34:30 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - LOGS_CAPTURED - Started capturing logs in process (pid: 734).
+2026-02-19 00:34:32 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - silver_mod - STEP_START - Started execution of step "silver_mod".
+2026-02-19 00:34:40 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - silver_mod - ASSET_MATERIALIZATION - Materialized value bronze_promocoes.
+2026-02-19 00:34:41 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - silver_mod - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-02-19 00:34:41 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - silver_mod - Writing file at: /workspace/.dagster_home/storage/silver_mod using PickledObjectFilesystemIOManager...
+2026-02-19 00:34:45 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - silver_mod - ASSET_MATERIALIZATION - Materialized value silver_mod.
+2026-02-19 00:34:45 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - silver_mod - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-02-19 00:34:45 +0000 - dagster - DEBUG - __ASSET_JOB - dab28e3d-88f0-48f5-af9f-98f9152937a6 - 734 - silver_mod - STEP_SUCCESS - Finished execution of step "silver_mod" in 12.52s.

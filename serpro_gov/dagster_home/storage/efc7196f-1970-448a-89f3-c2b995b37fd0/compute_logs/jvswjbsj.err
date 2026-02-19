@@ -1,0 +1,8 @@
+2026-02-18 23:52:51 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - LOGS_CAPTURED - Started capturing logs in process (pid: 516).
+2026-02-18 23:52:53 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - bronze_promocoes - STEP_START - Started execution of step "bronze_promocoes".
+2026-02-18 23:53:14 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - bronze_promocoes - ASSET_MATERIALIZATION - Materialized value bronze_promocoes.
+2026-02-18 23:53:14 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - bronze_promocoes - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-02-18 23:53:14 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - bronze_promocoes - Writing file at: /workspace/.dagster_home/storage/bronze_promocoes using PickledObjectFilesystemIOManager...
+2026-02-18 23:53:18 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - bronze_promocoes - ASSET_MATERIALIZATION - Materialized value bronze_promocoes.
+2026-02-18 23:53:19 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - bronze_promocoes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-02-18 23:53:19 +0000 - dagster - DEBUG - __ASSET_JOB - efc7196f-1970-448a-89f3-c2b995b37fd0 - 516 - bronze_promocoes - STEP_SUCCESS - Finished execution of step "bronze_promocoes" in 25.91s.

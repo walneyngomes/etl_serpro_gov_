@@ -1,0 +1,22 @@
+2026-02-18 23:13:35 +0000 - dagster - DEBUG - __ASSET_JOB - ab20f856-e3c9-49d4-884e-b9a54719e06a - 1452 - LOGS_CAPTURED - Started capturing logs in process (pid: 1452).
+2026-02-18 23:13:36 +0000 - dagster - DEBUG - __ASSET_JOB - ab20f856-e3c9-49d4-884e-b9a54719e06a - 1452 - bronze_promocoes - STEP_START - Started execution of step "bronze_promocoes".
+2026-02-18 23:14:01 +0000 - dagster - ERROR - __ASSET_JOB - ab20f856-e3c9-49d4-884e-b9a54719e06a - 1452 - bronze_promocoes - STEP_FAILURE - Execution of step "bronze_promocoes" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "bronze_promocoes"::
+
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+Stack Trace:
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+  File "/workspace/assets/bronze/bronze_promocoes.py", line 29, in bronze_promocoes
+    conn = psycopg2.connect(
+  File "/usr/local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+
